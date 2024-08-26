@@ -1,0 +1,229 @@
+* {
+    background: #212121;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.logo-alura {
+    width: 3%;
+    border-radius: 25%;
+    margin-top: 0.3%;
+    margin-left: 0.3%;
+} 
+
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.text-area {
+    position: absolute;
+    width: 40%;
+    height: 52%;
+    left: 8%;
+    top: 10%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 15px;
+    outline: none;
+    background-color: #f3f5fc;
+    border-radius: 30px;
+    box-shadow: 0px 1px 32px -8px rgb(247, 245, 245);
+    border: 1;
+}
+
+
+.mensaje-salida {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 75%;
+    left: 55%;
+    top: 10%;
+    padding: 15px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 32px;
+    background: #fff;
+    box-shadow: 0px 1px 32px -8px rgb(247, 245, 245);
+    border-radius: 32px;
+    background-image: url("img/muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mensaje-salida:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    gap: 30px;
+    position: absolute;
+    width: 60%;
+    left: 13%;
+    top: 76%;
+}
+
+.btn-encriptar {
+    background-color: #212121;
+    color: #d0c0c0;
+    padding: 10px 20px;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    width: 25%;
+    height: 25%;
+    border: 2px solid #007BFF;
+    border-radius: 35px;
+    cursor: pointer;
+    box-shadow: 0px 1px 10px rgba(254, 254, 254, 0.989);
+    transition: background-color 0.3s ease;
+}
+
+.btn-desencriptar {
+    background-color: #e8e8e8;
+    color: #212121;
+    padding: 10px 20px;
+    width: 25%;
+    height: 25%;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 600;
+    border: 2.5px solid #007BFF;
+    border-radius: 35px;
+    cursor: pointer;
+    box-shadow: 0px 1px 10px rgba(254, 254, 254, 0.989);
+    transition: background-color 0.3s ease;
+}
+
+
+.btn-encriptar:hover, .btn-desencriptar:hover {
+    background-color: #0056b3;
+}
+
+.btn-encriptar:active, .btn-desencriptar:active {
+    transform: scale(0.97);
+}
+
+.btn-encriptar:disabled, .btn-desencriptar:disabled {
+    background-color: #CCCCCC;
+    cursor: not-allowed;
+}
+
+.copiar {
+    position: absolute;
+    border: 0px solid #0a3871;
+    border-radius: 24px;
+    color: #b1b9c0;
+    cursor: pointer;
+    height: 7%;
+    bottom: 16%;
+    right: 21.6%;
+    width: 15%;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0px 1px 40px rgb(255, 1, 1);
+    transition: background-color 0.3s ease;
+}
+
+.copiar:active {
+    transform: scale(0.97);
+}
+
+.copiar:hover {
+    background-color: #0056b3;
+}
+
+.informacion {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 170%;
+    color: #727c85;
+    opacity: 0.9;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    position: absolute;
+    width: 50%;
+    left: 9%;
+    top: 69.5%;
+}
+
+#mensajeInformativo {
+    font-size: 14px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: #727c85;
+    top: 65.5%;
+    right: 64%;
+    position: absolute;
+    background: none;
+}
+
+#mensaje-alerta {
+    font-size: 14px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: #727c85;
+    top: 65.5%;
+    right: 59%;
+    position: absolute;
+    background: none;
+}
+
+#mensaje-copiar {
+    font-size: 14px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: #727c85;
+    top: 65.5%;
+    right: 63%;
+    position: absolute;
+    background: none;
+}
+
+#alerta-copiar {
+    font-size: 14px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: #727c85;
+    top: 65.5%;
+    right: 65%;
+    position: absolute;
+    background: none;
+}
+
+#alerta-error {
+    font-size: 14px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    color: #727c85;
+    top: 65.5%;
+    right: 59%;
+    position: absolute;
+    background: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Encriptador-Alura</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo-alura" src="img/logo-alura.jpeg" alt="logo-alura">
+    </header>
+    <main>
+        <section>
+            <textarea name="text-area" class="text-area" id="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+            <p id="mensajeInformativo"></p>
+            <p id="mensaje-alerta" style="color: cornflowerblue;"></p>
+            <p id="mensaje-copiar" style="color: green;"></p>
+            <p id="alerta-copiar" style="color: rgb(244, 60, 60);"></p>
+            <p id="alerta-error" style="color: rgb(241, 68, 68);"></p>
+        </section>
+        <section>
+            <div id="mensaje" class="mensaje-salida" translate="no"></div>
+            <div>
+                <button class="copiar" type="button" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
