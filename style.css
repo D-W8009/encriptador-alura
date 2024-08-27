@@ -136,6 +136,7 @@
     text-align: center;
     box-shadow: 0px 1px 40px rgb(255, 1, 1);
     transition: background-color 0.3s ease;
+    align-items: center;
 }
 
 .copiar:active {
@@ -226,4 +227,64 @@
     right: 59%;
     position: absolute;
     background: none;
+}
+
+@media (max-width: 768px) {
+
+    .logo-alura {
+        width: 5%;
+        margin-left: 2%;
+    }
+
+    .text-area {
+        width: 80%;
+        height: 32%;
+        left: 7%;
+        top: 5%;
+        font-size: 24px;
+    }
+
+    .mensaje-salida {
+        width: 80%;
+        height: 25%;
+        left: 7%;
+        top: 60%;
+        font-size: 24px;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1% 0;
+        gap: 30px;
+        position: absolute;
+        width: 150%;
+        left: 10%;
+        top: 50%;
+    }
+
+    .copiar {
+        align-items: center;
+        padding: 1% 0;
+        gap: 30px;
+        position: absolute;
+        width: 50%;
+        left: 25%;
+        top: 91%;
+    }
+
+    #mensajeInformativo, #mensaje-copiar, #alerta-copiar, #alerta-error {
+        font-size: 12px;
+        left: 30%;
+        top: 235px;
+        position: relative;
+    }
+
+    #mensaje-alerta {
+        font-size: 12px;
+        left: 10%;
+        top: 235px;
+        position: relative;
+    }
 }
