@@ -40,7 +40,7 @@
 ### Navega a la carpeta del proyecto:
 - cd encriptador-alura
 
-# Abre el archivo index.html en tu navegador web.
+- Abre el archivo index.html en tu navegador web.
 
 ## Contacto
 - **Dylam Morales Villa**
